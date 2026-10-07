@@ -1,0 +1,12 @@
+{
+    "type": "Code",
+    "modid": "seafarerstory",
+    "name": "Seafarer: Story & Exploration",
+    "description": "Tortuga, traders, quests, and story structures for Seafarer. Requires ProgressionFramework.",
+    "version": "0.6.0",
+    "dependencies": {
+        "game": "1.22.0",
+        "seafarer": "0.6.0",
+        "progressionframework": "1.1.0"
+    }
+}

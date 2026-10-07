@@ -1,4 +1,5 @@
 <Solution>
   <Project Path="Seafarer/Seafarer.csproj" />
+  <Project Path="SeafarerStory/SeafarerStory/SeafarerStory.csproj" Id="0fa42a57-5318-49da-ae33-6a8624b4e999" />
   <Project Path="ZZCakeBuild/CakeBuild.csproj" />
 </Solution>

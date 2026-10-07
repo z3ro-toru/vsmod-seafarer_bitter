@@ -130,7 +130,7 @@ public class BlockEntityPrepTablePlatform : BlockEntityPrepTableSlot
 
     protected override bool IsValidItem(ItemStack stack) =>
         stack?.Collectible?.Code?.Path?.Contains("barrel") == true ||
-        stack?.Collectible?.Code?.Path?.Contains("ongii") == true;
+        stack?.Collectible?.Code?.Path?.Contains("onggi") == true;
 
     private const int MaxSaltCapacity = 64;
 
@@ -361,7 +361,7 @@ public class BlockEntityPrepTablePlatform : BlockEntityPrepTableSlot
     public void ConsumeBarrelItem(string code, int quantity, PrepTableRecipeRegistry registry)
     {
         // Check salt storage
-        if (GetBarrelSalt() > 0 && registry.MatchesCodeString("game:salt", code))
+        if (GetBarrelSalt() >= 0 && registry.MatchesCodeString("game:salt", code))
         {
             int current = GetBarrelSalt();
             SetBarrelSalt(System.Math.Max(0, current - quantity));
